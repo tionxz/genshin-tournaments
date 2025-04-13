@@ -1,0 +1,54 @@
+/* Базовые стили */
+:root {
+  --bg-dark: #1a0526;
+  --text-light: #e0d6eb;
+  --accent-purple: #9c4dff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* Навбар */
+.navbar {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.game-link {
+  color: white;
+  background: var(--accent-purple);
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Главная страница */
+.main-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
